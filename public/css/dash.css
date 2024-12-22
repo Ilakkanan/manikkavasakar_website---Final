@@ -1,0 +1,126 @@
+.dash-layout{
+    width: 100%;
+    background-color: #fefefe;
+    margin-bottom: 50px;
+}
+.dash-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+.dash-nav{
+    width: 20%;
+    background-color: #6f0207;
+    padding: 10px;
+    
+}
+.dash-content{
+    width: 80%;
+    padding: 10px;
+}
+.top-nave{
+    width: 100%;
+    background-color: aqua;
+    height: 40px;
+}
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* Title color */
+    margin-bottom: 15px; /* Spacing between title and list */
+    padding-left: 15px; /* Remove padding from the list */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding from the list */
+}
+
+.nav-list li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff; /* Link color */
+    font-size: 16px; /* Font size for links */
+    display: block;
+    padding-left: 30px;
+    transition: 0.5s;
+}
+
+.nav-list li a:hover {
+    margin-left: 10px;
+}
+.full-height {
+    height: 75vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding does not affect total height */
+    border: none;
+    border-top: 2px solid #6f0207;
+}
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Optional: Add a close button */
+.alert-success::before {
+    content: '✔';
+    margin-right: 10px;
+}
+
+.alert .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: inherit;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #6f0207;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a6010a;
+}

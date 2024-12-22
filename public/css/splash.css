@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+}
+.splash h1{
+    font-size: 48px;
+
+}
+
+
+/* splash screen code start*/
+.splash{
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #6f0207;
+    transition: 1s;
+}
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+.logo.active{
+    bottom: 0;
+    opacity: 1.0;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 100px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+/* splash screen code end*/
+
+/*login Start*/
+.login-container{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    background-color: #5288a5;
+}
+/*login end*/
+
+/* for mobile width<768px (landscape)*/
+@media(max-width:768px){
+    .splash h1{
+        font-size: 30px;
+    }
+    /* splash screen code start*/
+    .logo-header{
+        top: 30%;
+    }
+    /* splash screen code end*/
+    }
+
+
+/* for mobile width<480px (portrait)*/
+@media(max-width:480px){
+    .splash h1{
+        font-size: 24px;
+    }
+/* splash screen code start*/
+.logo-header{
+    top: 45%;
+}
+/* splash screen code end*/
+}

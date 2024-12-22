@@ -1,0 +1,122 @@
+
+.container {
+    padding: 20px;
+}
+
+/* Header Styles */
+.title-color{
+    color: #6f0207;
+    font-weight: bold;
+}
+.title{
+    font-size: 25px;
+}
+
+/* Staff Details Layout */
+.staff-details {
+    display: flex;
+    flex-direction: column; /* Align rows vertically */
+    gap: 20px; /* Space between rows */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-row {
+    justify-content: center; /* Center align for the first row */
+}
+
+.column {
+    flex: 1;
+    min-width: 280px; /* Ensures the columns don't get too small */
+}
+
+.profile {
+    flex: 0 0 auto; /* Keeps the profile section at its original size */
+    text-align: left;
+}
+.profile img{
+    width: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align info to the start */
+}
+
+/* Field Names and Data */
+.field-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #6f0207;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px; /* Margin for spacing between buttons */
+}
+
+.btn:hover {
+    background-color: #8a0809;
+}
+
+/* Action Buttons Layout */
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.describe{
+    font-size: 18px;
+}
+.describe-bold{
+    font-weight: bold;
+}
+.dw-500{
+    font-weight: 500;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title{
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center; /* Center align */
+    }
+
+    .info, .field-names, .field-data {
+        align-items: flex-start; /* Align info to the start */
+    }
+    .second-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .field-names{
+        display: none;
+    }
+}

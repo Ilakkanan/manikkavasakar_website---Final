@@ -1,0 +1,175 @@
+.welcome{
+    height: fit-content;
+    max-height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+}
+.welcome-cont{
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+.slider,
+.wel-content{
+    width: 100%;
+}
+.slider img{
+    width: 600px;
+    border-radius: 15px;
+}
+
+/*Announcement start*/
+.announccement-cont{
+    width: 90%;
+    margin-left: 5%;
+    height: 50vh;
+    background-color: aqua;
+}
+/* Announcement Section Styling */
+.announcement {
+    padding: 20px;
+    background-color: #000000;
+    margin: 30px 0;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.announcement-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.announcement-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 19%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: transform 0.4s;
+}
+
+.announcement-item:hover {
+    transform: scale(1.05);
+}
+
+.announcement-item h3 {
+    color: #6f0207;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.announcement-item p {
+    color: #333;
+}
+/*====================================about us===============================================*/
+.about{
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+}
+.about-row{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    margin-top: 30px;
+}
+.Vision,
+.Mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #6f0207;
+    transition: 0.5s;
+    width: 49.8%;
+}
+.Vision{
+    text-align: left;
+}
+.Mission{
+    text-align: center;
+}
+.Vision:hover,
+.Mission:hover{
+    background-color: #6f0207;
+    color: #ffffff;
+}
+.about-title-1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-des-1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*====================================about us finished===============================================*/
+@media (max-width: 480px){
+    .announcement-cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .announcement-item {
+        width: 100%;
+        height: fit-content;
+    }
+    .welcome{
+        width: 98%;
+        margin-left: 1%;
+    }
+    .welcome-cont{
+        padding-top: 180px;
+    }
+    .slider,
+    .wel-content{
+        width: 88%;
+        margin-left:6%;
+
+    }
+    .slider img{
+        width: 300px;
+    }
+    /*====================================about us===============================================*/
+.about{
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+}
+.about-row{
+    flex-direction: column;
+}
+.Vision,
+.Mission{
+    width: 100%;
+}
+
+.about-title-1{
+    font-size: 20px;
+}
+.about-des-1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*====================================about us finished===============================================*/
+}
+
+
+
+
+
+
+
+
+
+
+

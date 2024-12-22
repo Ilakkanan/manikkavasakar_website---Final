@@ -1,0 +1,157 @@
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons p{
+    margin-top: 20px;
+    color:#ffffff;
+    margin-bottom: 20px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 20px;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 0.6;
+}
+.footerBottom{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: rgb(0, 0, 0);
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.tempHr{
+    opacity: 0;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+/*===========================================================fixed button start=========================================================*/
+.fixed-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 1; /* Start fully visible */
+    visibility: visible; /* Start fully visible */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+.fixed-buttons.hidden {
+    opacity: 0; /* Fully transparent */
+    visibility: hidden; /* Hide from view */
+}
+
+
+.fixed-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.announcement-button,
+.whatsapp-button {
+    background-color: #6f0207;
+    border: 2px solid #ffffff;
+}
+.announcement-button{
+    margin-top: 5px;
+}
+.fixed-buttons i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/*===========================================================fixed button finished=========================================================*/
+
+@media (max-width: 480px){
+    .footerNav ul li{
+        text-align: left;
+    }
+    .footer-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .f-m{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .f-m-t{
+        margin-left: 10px;
+    } 
+    .socialIcons{
+        justify-content: left;
+        text-align: left;
+    }
+    .tempBox{
+        margin-top: 20px;
+    }
+    .tempHr{
+        opacity: 1;
+    }
+}

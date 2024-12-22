@@ -1,0 +1,61 @@
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 1rem;
+}
+
+h1 {
+    color: #6f0207;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+select, input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #6f0207; /* Focus border color */
+    outline: none;
+}
+
+textarea {
+    height: 100px; /* Fixed height for textarea */
+    resize: none; /* Prevent resizing */
+}
+
+.btn-create{
+    background-color: #6f0207;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+}

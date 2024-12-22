@@ -1,0 +1,23 @@
+.myColor{
+    color: #6f0207;
+    font-size: 14px;
+    font-weight: 700;
+}
+.full-height {
+    height: 75vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding does not affect total height */
+}
+.btn-create{
+    background-color: #6f0207;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}

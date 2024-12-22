@@ -1,0 +1,141 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.bg-color-brown{
+    background-color: #6f0207;
+    color: #ffffff;
+}
+.bg-color-red{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.bg-color-white{
+    background-color: #ffffff;
+}
+.a-color{
+    color: blue;
+    font-weight: 500;
+}
+.current-color{
+    color: darkgreen;
+    font-weight: 500;
+}
+.box-10{
+    margin-top: 10px;
+}
+.box-50{
+    margin-top: 50px;
+}
+.box-30{
+    margin-top: 30px;
+}
+.sub{
+    font-size: 10px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.sub-color{
+    color: #3d3d3d;
+}
+
+.row-m,
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.title-color{
+    color: #6f0207;
+    font-weight: bold;
+}
+.title{
+    font-size: 25px;
+}
+.describe{
+    font-size: 18px;
+}
+.describe-bold{
+    font-weight: bold;
+}
+.dw-500{
+    font-weight: 500;
+}
+.dw-0{
+    font-weight: 400;
+}
+.width-70{
+    width: 100%;
+    text-align: center;
+}
+.width-70-2{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    background-color: #424242;
+}
+.note{
+    width: 100%;
+    background-color: #6f0207;
+    color: #ffffff;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+.slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1.5s ease-out;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+}
+.min-wid-btn{
+    min-width: 250px;
+}
+.fl{
+    display: flex;
+    flex-direction: row;
+}
+.head-button{
+    display: flex;
+    width: 100%;
+}
+.ml-50{
+    margin-left: 50px;
+}
+@media (max-width: 700px){
+  
+}
+
+@media (max-width: 480px){
+    .title{
+        font-size: 18px;
+    }
+    .row-m{
+        flex-direction: column;
+    }
+    .describe{
+        font-size: 16px;
+    }
+}

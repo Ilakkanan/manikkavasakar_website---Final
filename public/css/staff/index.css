@@ -1,0 +1,144 @@
+/* Input and Select Styles */
+input[type="text"], select {
+    width: 32%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters label {
+    margin-right: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #6f0207; /* Table border color */
+}
+
+th {
+    background-color: #6f0207; /* Header background color */
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+.ch-box-row{
+    width: 200px;
+}
+
+/* Action Buttons */
+.actions a, .actions button {
+    background-color: #6f0207; /* Action button color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button {
+    margin-left: 5px;
+}
+
+.actions a:hover, .actions button:hover {
+    background-color: #a61d27; /* Darker shade on hover */
+}
+
+/* Column Toggle */
+.column-toggle {
+    margin-left: 10px;
+}
+
+.column-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ch-box-row {
+    width: 200px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .btn {
+    margin: 0 5px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #6f0207;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pagination .btn.active {
+    background-color: red;
+}
+.actions a, .actions button {
+    background-color: #6f0207; /* Action button color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button {
+    margin-left: 5px;
+}
+
+.actions a:hover, .actions button:hover {
+    background-color: #a61d27; /* Darker shade on hover */
+}
+.min-wid-btn{
+    min-width: 250px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters label {
+        margin: 5px 0;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        display: block;
+        text-align: right;
+    }
+
+    th::before, td::before {
+        content: attr(data-title);
+        float: left;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,19 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Optional: Change label color */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /* Input font size */
+}
+
+/* Textarea Specific Styles */
+textarea.form-control {
+    height: 150px; /* Height for the textarea */
+    resize: vertical; /* Allow vertical resizing only */
+}
